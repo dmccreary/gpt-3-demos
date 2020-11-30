@@ -1,0 +1,34 @@
+site_name: GPT-3 Demos
+nav:
+  - Home: index.md
+  - Background: background.md
+  - Glossary: glossary.md
+  - References: references.md
+  - Contacts: contacts.md
+site_description: 'Resources for demos and teaching the Open AI GPT-3 API'
+site_author: 'Dan McCreary'
+repo_name: 'gpt-3-demos'
+repo_url: 'https://github.com/dmccreary/gpt-3-demos'
+edit_uri: 'blob/master/docs'
+theme:
+  name: material
+  logo: img/dan-headshot.png
+  palette:
+    primary: 'orange'
+    accent: 'blue'
+  feature:
+    tabs: true
+  custom_dir: 'theme'
+  include_sidebar: true
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+plugins:
+    - search
+markdown_extensions:
+  - codehilite:
+      linenums: true
