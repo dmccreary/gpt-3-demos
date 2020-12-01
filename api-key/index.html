@@ -19,7 +19,7 @@
     
     
       
-        <title>Background - GPT-3 Demos</title>
+        <title>OpenAI API Key Setup - GPT-3 Demos</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gpt-3-demos-background" class="md-skip">
+        <a href="#openai-api-key-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Background
+              OpenAI API Key Setup
             
           </span>
         </div>
@@ -198,20 +198,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Background" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../background/" title="Background" class="md-nav__link">
       Background
     </a>
-    
   </li>
 
     
@@ -268,6 +259,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#you-can-get-your-keys-here" class="md-nav__link">
+    You can get your keys here:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unix-environment-variable-method" class="md-nav__link">
+    UNIX Environment Variable Method
+  </a>
+  
+    <nav class="md-nav" aria-label="UNIX Environment Variable Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-your-key" class="md-nav__link">
+    Test your key
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -278,7 +306,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/dmccreary/gpt-3-demos/blob/master/docs/background.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/dmccreary/gpt-3-demos/blob/master/docs/api-key.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -286,19 +314,39 @@
                   
                 
                 
-                <h1 id="gpt-3-demos-background">GPT-3 Demos Background</h1>
-<p>GPT-3 is one of the most exciting developments in AI in the last ten years.  It is the first AI system to show signals of generalized intelligence.  Although it is far from perfect, it is very useful to learn about the limits of what a 175 billion parameter model can do.</p>
-<p>From the paper: https://arxiv.org/abs/2005.14165</p>
-<p>| Model Name |  nparams | nlayers | dmodel | nheads | dhead | Batch Size Learning Rate
-| ---------- | ---- | -- | -- | -- | -- | -- | -- |
-|GPT-3 Small  | 25M |12 |768 12 64 0.5M 6.0 × 10−4
-|GPT-3 Medium | 350M |24 |1024 16 64 0.5M 3.0 × 10−4
-|GPT-3 Large  | 760M |24 |1536 16 96 0.5M 2.5 × 10−4
-|GPT-3 XL     | 1.3B |24 |2048 24 128 1M 2.0 × 10−4
-|GPT-3 2.7B   | 2.7B |32 |2560 32 80 1M 1.6 × 10−4
-|GPT-3 6.7B   | 6.7B |32 |4096 32 128 2M 1.2 × 10−4
-|GPT-3 13B    | 13.0B |40 5|140 40 128 2M 1.0 × 10−4
-|GPT-3 175B   | 175.0B |96 |12288 96 128 3.2M 0.6 × 10−4</p>
+                <h1 id="openai-api-key-setup">OpenAI API Key Setup</h1>
+<h2 id="you-can-get-your-keys-here">You can get your keys here:</h2>
+<p>https://beta.openai.com/account/api-keys</p>
+<h2 id="unix-environment-variable-method">UNIX Environment Variable Method</h2>
+<p>You can set the environment variable </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">export</span> <span class="nv">OPENAI_API_KEY</span><span class="o">=</span>&lt;API-KEY&gt;
+</code></pre></div>
+</td></tr></table>
+
+<p>In your .bash_profile or similar shell startup.</p>
+<p>Verify by typing:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="nv">$OPENAI_API_KEY</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="test-your-key">Test your key</h3>
+<p>After you install the openapi conda environment you should then have an openai command in your path:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ which openai
+</code></pre></div>
+</td></tr></table>
+
+<p>Using the lowest cost engine: ada</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>openai api completions.create -e ada -p <span class="s2">&quot;The quick brown fox&quot;</span> -M <span class="m">5</span> --stream
+</code></pre></div>
+</td></tr></table>
+
+<p>Which returned this for me:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>The quick brown fox made many choices that we<span class="o">(</span>gpt<span class="o">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Error: No API key provided. (HINT: set your API key using in code using "openai.api_key = <API-KEY>", or you can set the environment variable OPENAI_API_KEY=<API-KEY>). You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.</p>
+<p>openai api completions.create -e ada -p "This is a test" -M 5 --stream</p>
                 
               
               
@@ -313,41 +361,6 @@
       
         
   <footer class="md-footer">
-    
-      <div class="md-footer-nav">
-        <nav class="md-footer-nav__inner md-grid">
-          
-            <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-              </div>
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Previous
-                  </span>
-                  Home
-                </span>
-              </div>
-            </a>
-          
-          
-            <a href="../glossary/" title="Glossary" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Next
-                  </span>
-                  Glossary
-                </span>
-              </div>
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-              </div>
-            </a>
-          
-        </nav>
-      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
