@@ -1,15 +1,23 @@
-# ATC Microsite Glossary Template
-
-#### Advanced Technology Collaborative
-
-A division of OptumInsite that provides the analysis of the fitness of advanced technologies to business units and helps develop pilot applications using emerging technologies.<br/>
-See [http://atc.optum.com](http://atc.optum.com)<br/>
-Also known as: ATC
+# GPG-3 Glossary
 
 #### Artificial Intelligence
 The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, natural language understanding, decision-making, and translation between languages.
 <br/>Also known as: AI
 
-#### Enterprise Knowledge Graph
-A single integrated graph database that includes all the information about an organization including all the touchpoints with their customers, their products, their sales, their employees, their hardware and network, their reports, their operational infrastructure, and their organizational metadata.<br/>
-Also known as: EKG
+#### Completion
+The text that the API generates based on the prompt
+
+#### Model Cutoff Date
+The model harvested data up to October 2019.  It will not be aware of any events after the cutoff date.
+
+#### Prompt
+“prompt” is text input to the API
+
+#### Stochastic
+API is stochastic by default, meaning that every time you call it you might get a slightly different completion, even if the prompt stays the same.
+
+#### Temperature
+A number from 0.0 to 1.0 on the randomness of a completion.  0.0 values are consistent.  1.0 have high variability.  Change the temperature up if you want more creative text generated.
+
+#### Tokens
+tokens

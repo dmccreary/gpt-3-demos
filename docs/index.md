@@ -1,11 +1,5 @@
-# Welcome
+# Dan's GPT-3 Demos
 
-Welcome to your atc-microsite-templates documentation page!
+This site contains demos for GPT-3 using python.
 
-See the Guide for the user guide.
-
-See the References section for links to other relevent web sites. See
-
-See the Contacts page to reach Dan or Matt.
-
-Good Luck!
+You can use the nav bar to the left to navigate to different sections of the demos.
